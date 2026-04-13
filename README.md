@@ -18,6 +18,9 @@ Se procedió con la actualización de los repositorios y la instalación del paq
 sudo apt update
 sudo apt install apache2
 ```
+---
+
+![Carga de instalación](imagenes/actualizacion.png)
 
 ---
 
@@ -32,8 +35,20 @@ Se ajustaron los permisos de propiedad con chown para permitir la edición de ar
 
 ---
 
+![Carga de instalación](imagenes/directorios.png)
+
+---
+![Carga de instalación](imagenes/funciono3patitos.png)
+----
+![Carga de instalación](imagenes/funciono-fundacion.png)
+----
+
 # Implementación de Base de Datos
 Se utilizó **MariaDB** para gestionar la base de datos `gestion_escolar`.
+
+---
+
+![Carga de instalación](imagenes/base-de-datos.png)
 
 ---
 
@@ -47,6 +62,12 @@ Este parte del proyecto consiste en la implementación de una base de datos Mari
 
 ---
 
+![Carga de instalación](imagenes/create-tables-bd.png)
+
+---
+![Carga de instalación](imagenes/ver-tablas.png)
+---
+
 # Automatización de Respaldos
 
 
@@ -56,11 +77,23 @@ Se desarrolló el script `respaldo.sh` que realiza las siguientes funciones:
 * Comprime el archivo resultante en formato `.sql.gz`.
 * Nombra el archivo con la fecha y hora actual: `backup_db_YYYY-MM-DD_HH-MM.sql.gz`.
 
+---
+
+![Carga de instalación](imagenes/respaldo.png)
+
+---
+
 ## 2. 📚 Monitoreo de Recursos
 El script `monitoreo.sh` supervisa el estado del servidor:
 * **CPU:** Alerta si supera el 80%.
 * **Disco:** Alerta si supera el 90%.
 * Identifica el proceso que más recursos consume y lo registra en `monitoreo_recursos.log`.
+
+---
+
+![Carga de instalación](imagenes/monitoreo.png)
+
+---
 
 ## 3. 🤖 Automatización con Cron
 Se configuraron las tareas programadas en el `crontab` del usuario:
@@ -72,10 +105,18 @@ Se configuraron las tareas programadas en el `crontab` del usuario:
 * * * * * /home/ruu/monitoreo.sh
 ```
 ---
+![Carga de instalación](imagenes/cada12horas.png)
+---
 
 # Sistema de Monitoreo de Recursos
 
 Se implementó un script de supervisión continua para garantizar la disponibilidad y el rendimiento del servidor.
+
+---
+
+![Carga de instalación](imagenes/prueba-monitoreo.png)
+
+----
 
 ## 🔎 Parámetros de Monitoreo:
 * **CPU:** Límite de alerta al **80%**. Se utiliza `top` y `awk` para procesar el porcentaje de carga.
@@ -92,6 +133,10 @@ Cuando un recurso supera el umbral establecido, el script realiza automáticamen
 ```text
 [2026-04-13 01:29:15] ALERTA: CPU excedido - Uso actual: 85% - Proceso: 1100 apache2
 ```
+
+---
+![Carga de instalación](imagenes/alerta2.png)
+---
 
 ### 🔁 Ejecución Automática
 Para cumplir con el monitoreo en tiempo real, el script se programó en el Cron para ejecutarse cada minuto:
