@@ -145,7 +145,14 @@ Fragmento de código
 ``` 
 * * * * * /home/ruu/proyecto_servidores/scripts/monitoreo.sh
 ```
+# Conclusiones
 
+La realización de este proyecto permitió integrar conceptos avanzados de administración de servidores, bases de datos y scripting, logrando las siguientes conclusiones técnicas:
+
+* **Eficiencia mediante la Automatización:** La implementación de tareas programadas con `cron` reduce significativamente el margen de error humano y garantiza que procesos críticos, como el respaldo de datos, se ejecuten de manera puntual y desatendida.
+* **Monitoreo Proactivo vs. Reactivo:** El uso de un script de monitoreo permite identificar cuellos de botella en el hardware (CPU, RAM, Disco) antes de que afecten la disponibilidad del servicio, transformando la administración del servidor en una tarea preventiva.
+* **Integridad y Seguridad de Datos:** El proceso de respaldo automatizado, combinado con la compresión de archivos, asegura que la información institucional esté protegida contra fallos del sistema, optimizando a su vez el uso del almacenamiento.
+* **Estandarización y Escalabilidad:** Organizar el proyecto bajo una estructura de directorios lógica (`scripts/`, `logs/`, `backups/`) y utilizar control de versiones con Git, facilita el mantenimiento a largo plazo y permite que el sistema crezca de manera ordenada según las necesidades de la infraestructura.
 ---
 ## 🛠️ Tecnologías Utilizadas
 
