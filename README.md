@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Configuración de Servidor Web Apache con Virtual Hosts
 
 Este proyecto documenta la instalación y configuración de un servidor web Apache en una máquina virtual (Ubuntu/Debian) para alojar dos sitios web independientes utilizando el concepto de **Virtual Hosting**.
@@ -29,3 +30,7 @@ Se ajustaron los permisos de propiedad con chown para permitir la edición de ar
 ```
 
 ---
+=======
+# proyecto
+Diseño, implementación y administración de una infraestructura de servicios en Linux que incluye servidores web, base de datos, automatización de tareas, monitoreo del sistema y gestión de procesos mediante Bash scripting
+>>>>>>> 7164574d290d8586af8a4554d8f6451395a0136d
