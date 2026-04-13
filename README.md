@@ -100,3 +100,12 @@ Fragmento de código
 ``` 
 * * * * * /home/ruu/proyecto_servidores/scripts/monitoreo.sh
 ```
+
+---
+## 🛠️ Tecnologías Utilizadas
+
+* **Sistema Operativo:** Ubuntu (Linux) / Windows 11 (Host)
+* **Base de Datos:** MariaDB 10.x
+* **Lenguaje:** Bash Shell Scripting
+* **Control de Versiones:** Git & GitHub & VisualStudio
+* **Administración:** Crontab (Automatización de tareas)
