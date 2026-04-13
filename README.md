@@ -27,8 +27,8 @@ Se crearon directorios independientes para cada sitio web con el fin de mantener
 ```Bash
 sudo mkdir -p /var/www/empresa.local/html
 sudo mkdir -p /var/www/curso.local/html
-Se ajustaron los permisos de propiedad con chown para permitir la edición de archivos por parte del usuario actual.
 ```
+Se ajustaron los permisos de propiedad con chown para permitir la edición de archivos por parte del usuario actual.
 
 ---
 
@@ -94,7 +94,7 @@ Cuando un recurso supera el umbral establecido, el script realiza automáticamen
 ```
 
 ### 🔁 Ejecución Automática
-Para cumplir con el monitoreo en tiempo real, el script se programó en el demonio Cron para ejecutarse cada minuto:
+Para cumplir con el monitoreo en tiempo real, el script se programó en el Cron para ejecutarse cada minuto:
 
 Fragmento de código
 ``` 
